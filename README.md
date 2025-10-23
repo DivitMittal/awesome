@@ -15,3 +15,6 @@
 - [searchix](https://sr.ht/~alanpearce/searchix/): a nix ecosystem search tool
 - [goguma](https://sr.ht/~emersion/goguma/): a flutter IRC client
 - [aerc](https://sr.ht/~rjarry/aerc/): a TUI email client
+
+# [Codeberg](https://codeberg.org/)
+- [LocalCDN](https://codeberg.org/nobody/LocalCDN): a browser extension that emulates CDNs to improve privacy & efficiency
