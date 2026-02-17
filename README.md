@@ -17,4 +17,4 @@
 - [aerc](https://sr.ht/~rjarry/aerc/): a TUI email client
 
 # [Codeberg](https://codeberg.org/)
-- [LocalCDN](https://codeberg.org/nobody/LocalCDN): a browser extension that emulates CDNs to improve privacy & efficiency
+See [DivitMittal's Codeberg stars](https://codeberg.org/DivitMittal?tab=stars)
