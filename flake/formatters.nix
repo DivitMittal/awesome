@@ -7,7 +7,7 @@
       excludes = [
         ".github/*"
         "README.md"
-        "stars.md"
+        "srht.md"
       ];
     };
 

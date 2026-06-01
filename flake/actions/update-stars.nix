@@ -48,11 +48,11 @@ in {
           };
         }
         {
-          name = "Commit refreshed stars.md";
+          name = "Commit refreshed README.md";
           uses = "stefanzweifel/git-auto-commit-action@v5";
           "with" = {
-            commit_message = "docs(stars): refresh GitHub & Codeberg stars";
-            file_pattern = "stars.md";
+            commit_message = "docs(stars): refresh GitHub & Codeberg stars in README";
+            file_pattern = "README.md";
           };
         }
       ];

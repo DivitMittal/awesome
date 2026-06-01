@@ -10,7 +10,7 @@
         package = pkgs.prek;
         gitPackage = pkgs.gitFull;
         src = ../.;
-        excludes = ["flake.lock" "stars.md"];
+        excludes = ["flake.lock"];
         default_stages = ["pre-commit"];
         hooks = {
           ## Formatting
