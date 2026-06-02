@@ -17,6 +17,12 @@ GitHub & Codeberg sections are auto-generated twice weekly by [`nix run .#update
 - [aerc](https://sr.ht/~rjarry/aerc/): a TUI email client
 <!-- SRHT:END -->
 
+<!-- CODEBERG:START -->
+# [Codeberg](https://codeberg.org/)
+
+_No starred repos (or `CODEBERG_TOKEN` not configured)._
+<!-- CODEBERG:END -->
+
 <!-- GITHUB:START -->
 # [GitHub](https://github.com/)
 
@@ -976,9 +982,3 @@ GitHub & Codeberg sections are auto-generated twice weekly by [`nix run .#update
 - [tldr-pages/tldr](https://github.com/tldr-pages/tldr) — Collaborative cheatsheets for console commands 📚.
 - [torvalds/linux](https://github.com/torvalds/linux) — Linux kernel source tree
 <!-- GITHUB:END -->
-
-<!-- CODEBERG:START -->
-# [Codeberg](https://codeberg.org/)
-
-_No starred repos (or `CODEBERG_TOKEN` not configured)._
-<!-- CODEBERG:END -->
