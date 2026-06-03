@@ -1,11 +1,31 @@
 <h1 align='center'>Awesome List</h1>
 <div align='center'>
     <img width=250 height=250 title='Awesome Logo' src='https://raw.githubusercontent.com/sindresorhus/awesome/refs/heads/main/media/logo.svg' alt="Awesome list's official logo"/>
+    <div align='center'>
+        <a href='https://github.com/DivitMittal/awesome'>
+            <img src='https://img.shields.io/github/repo-size/DivitMittal/awesome?style=for-the-badge&logo=github' alt='repo-size'/>
+        </a>
+        <a href='https://github.com/DivitMittal/awesome/blob/master/LICENSE'>
+            <img src='https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logo=unlicense' alt='license'/>
+        </a>
+    </div>
 </div>
 
 [@DivitMittal](https://github.com/DivitMittal/)'s FLOSS(Free/Libre open-source software) awesome list.
 
 GitHub & Codeberg sections are auto-generated twice weekly by [`nix run .#update-stars`](./scripts/update_stars.py). sourcehut content is sourced from [`srht.md`](./srht.md).
+
+<div align='center'>
+    <a href='https://github.com/DivitMittal/awesome/actions/workflows/flake-check.yml'>
+        <img src='https://github.com/DivitMittal/awesome/actions/workflows/flake-check.yml/badge.svg' alt='flake-check'/>
+    </a>
+    <a href='https://github.com/DivitMittal/awesome/actions/workflows/flake-lock-update.yml'>
+        <img src='https://github.com/DivitMittal/awesome/actions/workflows/flake-lock-update.yml/badge.svg' alt='flake-lock-update'/>
+    </a>
+    <a href='https://github.com/DivitMittal/awesome/actions/workflows/update-stars.yml'>
+        <img src='https://github.com/DivitMittal/awesome/actions/workflows/update-stars.yml/badge.svg' alt='update-stars'/>
+    </a>
+</div>
 
 ---
 
