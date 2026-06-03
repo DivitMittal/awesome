@@ -9,6 +9,43 @@ GitHub & Codeberg sections are auto-generated twice weekly by [`nix run .#update
 
 ---
 
+## Contents
+
+- [sourcehut](#sourcehut)
+- [Codeberg](#codeberg)
+- [GitHub](#github)
+  - [Quant](#quant)
+  - [GitHub](#github-1)
+  - [nix](#nix)
+  - [MCP](#mcp)
+  - [neovim](#neovim)
+  - [CLI](#cli)
+  - [Android](#android)
+  - [macOS](#macos)
+  - [AI](#ai)
+  - [VSCode](#vscode)
+  - [GUI](#gui)
+  - [Windows](#windows)
+  - [Music & Audiophile](#music--audiophile)
+  - [Lang,LSP,DAP,Formatter,Linter](#langlspdapformatterlinter)
+  - [docs](#docs)
+  - [linux](#linux)
+  - [Python](#python)
+  - [TUI](#tui)
+  - [Keyboard](#keyboard)
+  - [Web Browser](#web-browser)
+  - [emacs](#emacs)
+  - [webdev](#webdev)
+  - [shell](#shell)
+  - [Notes](#notes)
+  - [Spotify](#spotify)
+  - [IoT](#iot)
+  - [web3](#web3)
+  - [yazi](#yazi)
+  - [Uncategorized](#uncategorized)
+
+---
+
 <!-- SRHT:START -->
 # [sourcehut](https://sr.ht/)
 - [chawan](https://git.sr.ht/~bptato/chawan): a TUI web-browser with CSS & JS support
@@ -28,6 +65,9 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 
 ## Quant
 
+<details>
+<summary>6 items</summary>
+
 - [dhan-oss/DhanHQ-py](https://github.com/dhan-oss/DhanHQ-py) — The official Python client for communicating with the Dhan API.
 - [iterativv/NostalgiaForInfinity](https://github.com/iterativv/NostalgiaForInfinity) — Trading strategy for the Freqtrade crypto bot
 - [microsoft/qlib](https://github.com/microsoft/qlib) — Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research, from exploring ideas to implementing productions. Qlib supports diverse ML modeling paradigms, including supervised learning, market dynamics modeling, and RL, and is now equipped with https://github.com/microsoft/RD-Agent to automate R&D process.
@@ -35,7 +75,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [Shivam5022/Knowledgebase-SV](https://github.com/Shivam5022/Knowledgebase-SV) — Personal notes (technical)
 - [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) — An AI Hedge Fund Team
 
+</details>
+
 ## GitHub
+
+<details>
+<summary>30 items</summary>
 
 - [actions/checkout](https://github.com/actions/checkout) — Action for checking out a repo
 - [actions/runner](https://github.com/actions/runner) — The Runner for GitHub Actions :rocket:
@@ -68,7 +113,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [webfactory/ssh-agent](https://github.com/webfactory/ssh-agent) — GitHub Action to setup `ssh-agent` with a private key
 - [yusukebe/gh-markdown-preview](https://github.com/yusukebe/gh-markdown-preview) — GitHub CLI extension to preview Markdown looks like GitHub.
 
+</details>
+
 ## nix
+
+<details>
+<summary>81 items</summary>
 
 - [3timeslazy/nix-search-tv](https://github.com/3timeslazy/nix-search-tv) — Fuzzy search for Nix packages.
 - [ad-si/nix-companies](https://github.com/ad-si/nix-companies) — Curated list of companies that use Nix / NixOS in production
@@ -152,7 +202,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [yaxitech/ragenix](https://github.com/yaxitech/ragenix) — age-encrypted secrets for NixOS; drop-in replacement for agenix
 - [zhaofengli/nix-homebrew](https://github.com/zhaofengli/nix-homebrew) — Homebrew installation manager for nix-darwin
 
+</details>
+
 ## MCP
+
+<details>
+<summary>11 items</summary>
 
 - [aldinokemal/go-whatsapp-web-multidevice](https://github.com/aldinokemal/go-whatsapp-web-multidevice) — GOWA - WhatsApp REST API with support for UI, Multi Account, Webhooks, and MCP, and Chatwoot. Built with Golang for efficient memory use.
 - [bgauryy/octocode](https://github.com/bgauryy/octocode) — MCP server for semantic code research and context generation on real-time using LLM patterns | Search naturally across public & private repos based on your permissions | Transform any accessible codebase/s into AI-optimized knowledge on simple and complex flows | Find real implementations and live docs from anywhere
@@ -166,7 +221,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [oraios/serena](https://github.com/oraios/serena) — A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent
 - [utensils/mcp-nixos](https://github.com/utensils/mcp-nixos) — MCP-NixOS - Model Context Protocol Server for NixOS resources
 
+</details>
+
 ## neovim
+
+<details>
+<summary>49 items</summary>
 
 - [3rd/image.nvim](https://github.com/3rd/image.nvim) — 🖼️ Bringing images to Neovim.
 - [bullets-vim/bullets.vim](https://github.com/bullets-vim/bullets.vim) — 🔫 Bullets.vim is a Vim/NeoVim plugin for automated bullet lists.
@@ -218,7 +278,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [zbirenbaum/copilot.lua](https://github.com/zbirenbaum/copilot.lua) — Fully featured & enhanced replacement for copilot.vim complete with API for interacting with Github Copilot
 - [zk-org/zk-nvim](https://github.com/zk-org/zk-nvim) — Neovim extension for zk
 
+</details>
+
 ## CLI
+
+<details>
+<summary>87 items</summary>
 
 - [343dev/optimizt](https://github.com/343dev/optimizt) — CLI image optimization tool
 - [9001/copyparty](https://github.com/9001/copyparty) — Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file
@@ -308,7 +373,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) — A feature-rich command-line audio/video downloader
 - [zellij-org/zellij](https://github.com/zellij-org/zellij) — A terminal workspace with batteries included
 
+</details>
+
 ## Android
+
+<details>
+<summary>98 items</summary>
 
 - [5ec1cff/TrickyStore](https://github.com/5ec1cff/TrickyStore)
 - [AdAway/AdAway](https://github.com/AdAway/AdAway) — AdAway is a free and open source ad blocker for Android.
@@ -409,7 +479,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [YeapGuy/VolumeScroll](https://github.com/YeapGuy/VolumeScroll) — Scroll anywhere using volume buttons (Android)
 - [ZG089/Re-Malwack](https://github.com/ZG089/Re-Malwack) — A fully-fledged ad-block module. Contains all your needs ✨
 
+</details>
+
 ## macOS
+
+<details>
+<summary>53 items</summary>
 
 - [abiosoft/colima](https://github.com/abiosoft/colima) — Container runtimes on macOS (and Linux) with minimal setup
 - [ahmetb/Iris](https://github.com/ahmetb/Iris) — Webcam mirror window for macOS
@@ -465,7 +540,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [yannbertrand/macos-defaults](https://github.com/yannbertrand/macos-defaults) — Incomplete list of macOS `defaults` commands with demos ✨
 - [yueseqaz/SakuraWallpaper](https://github.com/yueseqaz/SakuraWallpaper) — A lightweight macOS video wallpaper app (open-source)/一款适用于 macOS 的轻量级动态壁纸软件
 
+</details>
+
 ## AI
+
+<details>
+<summary>59 items</summary>
 
 - [agentsmd/agents.md](https://github.com/agentsmd/agents.md) — AGENTS.md — a simple, open format for guiding coding agents
 - [anomalyco/models.dev](https://github.com/anomalyco/models.dev) — An open-source database of AI models.
@@ -527,7 +607,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [zai-org/GLM-Image](https://github.com/zai-org/GLM-Image) — GLM-Image: Auto-regressive for Dense-knowledge and High-fidelity Image Generation.
 - [zai-org/zai-coding-plugins](https://github.com/zai-org/zai-coding-plugins) — Z.ai Coding Plugins Marketplace in Claude Code
 
+</details>
+
 ## VSCode
+
+<details>
+<summary>17 items</summary>
 
 - [cline/cline](https://github.com/cline/cline) — Autonomous coding agent as an SDK, IDE extension, or CLI assistant.
 - [direnv/direnv-vscode](https://github.com/direnv/direnv-vscode) — unclutter your .profile
@@ -547,7 +632,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [tomoki1207/vscode-pdfviewer](https://github.com/tomoki1207/vscode-pdfviewer) — Show PDF preview in VSCode.
 - [VSCodeVim/Vim](https://github.com/VSCodeVim/Vim) — :star: Vim for Visual Studio Code
 
+</details>
+
 ## GUI
+
+<details>
+<summary>15 items</summary>
 
 - [ahrm/sioyek](https://github.com/ahrm/sioyek) — Sioyek is a PDF viewer with a focus on textbooks and research papers
 - [BetterDiscord/BetterDiscord](https://github.com/BetterDiscord/BetterDiscord) — Better Discord enhances Discord desktop app with new features.
@@ -565,7 +655,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [veracrypt/VeraCrypt](https://github.com/veracrypt/VeraCrypt) — Disk encryption with strong security based on TrueCrypt
 - [wezterm/wezterm](https://github.com/wezterm/wezterm) — A GPU-accelerated cross-platform terminal emulator and multiplexer written by @wez and implemented in Rust
 
+</details>
+
 ## Windows
+
+<details>
+<summary>13 items</summary>
 
 - [anderlli0053/DEV-tools](https://github.com/anderlli0053/DEV-tools) — 📦 A versatile Scoop bucket that evolved from development tools into a comprehensive software sanctuary. Originally focused on DEV tools for applications and games, now expanded to include utilities, applications, and everyday software. Automated via GitHub CI/CD for reliable package management.
 - [glzr-io/glazewm](https://github.com/glzr-io/glazewm) — GlazeWM is a tiling window manager for macOS and Windows inspired by i3wm.
@@ -581,7 +676,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [ScoopInstaller/Scoop](https://github.com/ScoopInstaller/Scoop) — A command-line installer for Windows.
 - [valinet/ExplorerPatcher](https://github.com/valinet/ExplorerPatcher) — This project aims to enhance the working environment on Windows
 
+</details>
+
 ## Music & Audiophile
+
+<details>
+<summary>31 items</summary>
 
 - [adrum/MultiSoundChanger](https://github.com/adrum/MultiSoundChanger) — 🎧 🔈 A small tool for changing sound volume even for aggregate devices cause native sound volume controller can't change volume of aggregate devices
 - [aonez/MultiSoundChanger](https://github.com/aonez/MultiSoundChanger) — 🎧 🔈 A small tool for changing sound volume even for aggregate devices cause native sound volume controller can't change volume of aggregate devices
@@ -615,7 +715,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [timschneeb/RootlessJamesDSP](https://github.com/timschneeb/RootlessJamesDSP) — An implementation of the system-wide JamesDSP audio processing engine for non-rooted Android devices
 - [vincentneo/LosslessSwitcher](https://github.com/vincentneo/LosslessSwitcher) — Automated Apple Music Lossless Sample Rate Switching for Audio Devices on Macs.
 
+</details>
+
 ## Lang,LSP,DAP,Formatter,Linter
+
+<details>
+<summary>17 items</summary>
 
 - [bash-lsp/bash-language-server](https://github.com/bash-lsp/bash-language-server) — A language server for Bash
 - [cmhughes/latexindent.pl](https://github.com/cmhughes/latexindent.pl) — Perl script to add indentation (leading horizontal space) to LaTeX files. It can modify line breaks before, during and after code blocks; it can perform text wrapping and paragraph line break removal. It can also perform string-based and regex-based substitutions/replacements. The script is customisable through its YAML interface.
@@ -635,7 +740,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [swiftlang/swift-format](https://github.com/swiftlang/swift-format) — Formatting technology for Swift source code
 - [tweag/ormolu](https://github.com/tweag/ormolu) — A formatter for Haskell source code
 
+</details>
+
 ## docs
+
+<details>
+<summary>14 items</summary>
 
 - [asciidoctor/asciidoctor](https://github.com/asciidoctor/asciidoctor) — :gem: A fast, open source text processor and publishing toolchain, written in Ruby, for converting AsciiDoc content to HTML 5, DocBook 5, and other formats.
 - [badges/shields](https://github.com/badges/shields) — Concise, consistent, and legible badges in SVG and raster format
@@ -652,7 +762,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [wikimedia/mediawiki](https://github.com/wikimedia/mediawiki) — 🌻 The collaborative editing software that runs Wikipedia. Mirror from https://gerrit.wikimedia.org/g/mediawiki/core. See https://mediawiki.org/wiki/Developer_access for contributing.
 - [zaro/pdf-metadata-editor](https://github.com/zaro/pdf-metadata-editor) — PDF Metadata Editor is a simple tool you can use to edit the metadata (Author, Keywors, etc.) of a PDF document.
 
+</details>
+
 ## linux
+
+<details>
+<summary>5 items</summary>
 
 - [bugaevc/wl-clipboard](https://github.com/bugaevc/wl-clipboard) — Command-line copy/paste utilities for Wayland
 - [hyprwm/Hyprland](https://github.com/hyprwm/Hyprland) — Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.
@@ -660,7 +775,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [noctalia-dev/noctalia-shell](https://github.com/noctalia-dev/noctalia-shell) — A sleek and minimal desktop shell thoughtfully crafted for Wayland.
 - [quickshell-mirror/quickshell](https://github.com/quickshell-mirror/quickshell) — Flexible toolkit for making desktop shells with QtQuick, for Wayland and X11
 
+</details>
+
 ## Python
+
+<details>
+<summary>13 items</summary>
 
 - [astral-sh/uv](https://github.com/astral-sh/uv) — An extremely fast Python package and project manager, written in Rust.
 - [huggingface/pytorch-image-models](https://github.com/huggingface/pytorch-image-models) — The largest collection of PyTorch image encoders / backbones. Including train, eval, inference, export scripts, and pretrained weights -- ResNet, ResNeXT, EfficientNet, NFNet, Vision Transformer (ViT), MobileNetV4, MobileNet-V3 & V2, RegNet, DPN, CSPNet, Swin Transformer, MaxViT, CoAtNet, ConvNeXt, and more
@@ -676,7 +796,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [pytorch/pytorch](https://github.com/pytorch/pytorch) — Tensors and Dynamic neural networks in Python with strong GPU acceleration
 - [williamjameshandley/py2nb](https://github.com/williamjameshandley/py2nb) — convert python scripts to jupyter notebooks
 
+</details>
+
 ## TUI
+
+<details>
+<summary>34 items</summary>
 
 - [akarsh1995/leetcode-tui](https://github.com/akarsh1995/leetcode-tui) — Terminal UI for leetcode. Lets you browse questions through different topics. View, solve, run and submit questions from TUI.
 - [andmarti1424/sc-im](https://github.com/andmarti1424/sc-im) — sc-im - Spreadsheet Calculator Improvised -- An ncurses spreadsheet program for terminal
@@ -713,7 +838,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [vim/vim](https://github.com/vim/vim) — The official Vim repository
 - [weechat/scripts](https://github.com/weechat/scripts) — Official scripts for WeeChat.
 
+</details>
+
 ## Keyboard
+
+<details>
+<summary>26 items</summary>
 
 - [atuan26/warpd](https://github.com/atuan26/warpd) — A modal keyboard-driven virtual pointer with advanced feature
 - [beekeeb/piantor](https://github.com/beekeeb/piantor) — The Piantor Keyboard is a beginner-friendly, easy-to-solder, 42-key or 36-key, diodeless, low profile aggressive column staggered, hotswappable and non-hotswappable, programmable ergonomic mechanical split keyboard powered by Raspberry Pi Pico or other compatible RP2040 boards. It is based on the Cantor Keyboard.
@@ -742,7 +872,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [the-via/app](https://github.com/the-via/app)
 - [vial-kb/vial-qmk](https://github.com/vial-kb/vial-qmk) — QMK fork with Vial-specific features.
 
+</details>
+
 ## Web Browser
+
+<details>
+<summary>28 items</summary>
 
 - [ajayyy/SponsorBlock](https://github.com/ajayyy/SponsorBlock) — Skip YouTube video sponsors (browser extension)
 - [Alex313031/Mercury](https://github.com/Alex313031/Mercury) — Firefox fork with compiler optimizations and patches from Librewolf, Waterfox, and GNU IceCat.
@@ -773,7 +908,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [yokoffing/Betterfox](https://github.com/yokoffing/Betterfox) — Firefox user.js for optimal privacy and security. Your favorite browser, but better.
 - [zen-browser/desktop](https://github.com/zen-browser/desktop) — Welcome to a calmer internet
 
+</details>
+
 ## emacs
+
+<details>
+<summary>23 items</summary>
 
 - [abo-abo/hydra](https://github.com/abo-abo/hydra) — make Emacs bindings that stick around
 - [Alexander-Miller/treemacs](https://github.com/Alexander-Miller/treemacs)
@@ -799,7 +939,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [radian-software/apheleia](https://github.com/radian-software/apheleia) — 🌷 Run code formatter on buffer contents without moving point, using RCS patches and dynamic programming.
 - [radian-software/straight.el](https://github.com/radian-software/straight.el) — 🍀 Next-generation, purely functional package manager for the Emacs hacker.
 
+</details>
+
 ## webdev
+
+<details>
+<summary>7 items</summary>
 
 - [denoland/deno](https://github.com/denoland/deno) — A modern runtime for JavaScript and TypeScript.
 - [microsoft/playwright](https://github.com/microsoft/playwright) — Playwright is a framework for Web Testing and Automation. It allows testing Chromium, Firefox and WebKit with a single API.
@@ -809,7 +954,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [php/php-src](https://github.com/php/php-src) — The PHP Interpreter
 - [pnpm/pnpm](https://github.com/pnpm/pnpm) — Fast, disk space efficient package manager
 
+</details>
+
 ## shell
+
+<details>
+<summary>24 items</summary>
 
 - [Aloxaf/fzf-tab](https://github.com/Aloxaf/fzf-tab) — Replace zsh's default completion selection menu with fzf!
 - [bouk/babelfish](https://github.com/bouk/babelfish) — Translate bash scripts to fish
@@ -836,7 +986,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions) — Additional completion definitions for Zsh.
 - [zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) — Fish shell like syntax highlighting for Zsh.
 
+</details>
+
 ## Notes
+
+<details>
+<summary>5 items</summary>
 
 - [excalidraw/excalidraw](https://github.com/excalidraw/excalidraw) — Virtual whiteboard for sketching hand-drawn like diagrams
 - [obsidianmd/obsidian-releases](https://github.com/obsidianmd/obsidian-releases) — Community plugins list, theme list, and releases of Obsidian.
@@ -844,7 +999,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [zk-org/zk](https://github.com/zk-org/zk) — A plain text note-taking assistant for Zettelkasten or otherwise
 - [zk-org/zk-nvim](https://github.com/zk-org/zk-nvim) — Neovim extension for zk
 
+</details>
+
 ## Spotify
+
+<details>
+<summary>14 items</summary>
 
 - [aome510/spotify-player](https://github.com/aome510/spotify-player) — A Spotify player in the terminal with full feature parity
 - [Bergbok/Spicetify-Creations](https://github.com/Bergbok/Spicetify-Creations) — Apps and extensions for the official Spotify client
@@ -861,7 +1021,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [Spotifyd/spotifyd](https://github.com/Spotifyd/spotifyd) — A spotify daemon
 - [Team-xManager/xManager](https://github.com/Team-xManager/xManager) — Ad-Free, New Features & Freedom
 
+</details>
+
 ## IoT
+
+<details>
+<summary>6 items</summary>
 
 - [elfhosted/plex_debrid](https://github.com/elfhosted/plex_debrid) — Plex torrent streaming through Debrid Services
 - [espressif/esptool](https://github.com/espressif/esptool) — Serial utility for flashing, provisioning, and interacting with Espressif SoCs
@@ -870,7 +1035,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [TigerVNC/tigervnc](https://github.com/TigerVNC/tigervnc) — High performance, multi-platform VNC client and server
 - [wled/WLED](https://github.com/wled/WLED) — Control WS2812B and many more types of digital RGB LEDs with an ESP32 over WiFi!
 
+</details>
+
 ## web3
+
+<details>
+<summary>17 items</summary>
 
 - [Chocobozzz/PeerTube](https://github.com/Chocobozzz/PeerTube) — ActivityPub-federated video streaming platform using P2P directly in your web browser
 - [debridmediamanager/debrid-media-manager](https://github.com/debridmediamanager/debrid-media-manager) — Curate an inifinite media library
@@ -890,7 +1060,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [weechat/weechat](https://github.com/weechat/weechat) — The extensible chat client.
 - [zulip/zulip](https://github.com/zulip/zulip) — Zulip server and web application. Open-source team chat that helps teams stay productive and focused.
 
+</details>
+
 ## yazi
+
+<details>
+<summary>9 items</summary>
 
 - [AnirudhG07/awesome-yazi](https://github.com/AnirudhG07/awesome-yazi) — A collection of Yazi's Plugins, flavours and more resources.
 - [imsi32/yatline-addons](https://github.com/imsi32/yatline-addons) — Awesome list of repositories for Yatline add-ons.
@@ -902,7 +1077,12 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [yazi-rs/flavors](https://github.com/yazi-rs/flavors) — Some Yazi flavors maintained by community.
 - [yazi-rs/plugins](https://github.com/yazi-rs/plugins) — Place code snippets from docs into this monorepo, so that users can update more easily via package manager.
 
+</details>
+
 ## Uncategorized
+
+<details>
+<summary>77 items</summary>
 
 - [0xspryo/AdvancedThe](https://github.com/0xspryo/AdvancedThe) — Decentralized data sovereignty enabled through EdgeResilient architecture for high-performance, real-time data synchronization Core.
 - [0xspryo/AnvilHub](https://github.com/0xspryo/AnvilHub) — Omni-synthesizing Serverless Function Composition orchestrates Edge-based Event Processing seamlessly within AnvilHub FluxPlatform
@@ -981,4 +1161,6 @@ _No starred repos (or `CODEBERG_TOKEN` not configured)._
 - [tiann/KernelSU](https://github.com/tiann/KernelSU) — A Kernel based root solution for Android
 - [tldr-pages/tldr](https://github.com/tldr-pages/tldr) — Collaborative cheatsheets for console commands 📚.
 - [torvalds/linux](https://github.com/torvalds/linux) — Linux kernel source tree
+
+</details>
 <!-- GITHUB:END -->

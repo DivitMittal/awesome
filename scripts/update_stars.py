@@ -218,10 +218,14 @@ def render_entry(repo: dict[str, Any]) -> str:
 def render_repo_section(heading: str, items: list[dict[str, Any]]) -> list[str]:
     if not items:
         return []
+    sorted_items = sorted(items, key=lambda x: x["nameWithOwner"].lower())
+    n = len(sorted_items)
+    label = f"{n} item{'s' if n != 1 else ''}"
     lines = [heading, ""]
-    for r in sorted(items, key=lambda x: x["nameWithOwner"].lower()):
+    lines += ["<details>", f"<summary>{label}</summary>", ""]
+    for r in sorted_items:
         lines.append(render_entry(r))
-    lines.append("")
+    lines += ["", "</details>", ""]
     return lines
 
 
