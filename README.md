@@ -1,6 +1,8 @@
 <h1 align='center'>Awesome List</h1>
 <div align='center'>
     <img width=250 height=250 title='Awesome Logo' src='https://raw.githubusercontent.com/sindresorhus/awesome/refs/heads/main/media/logo.svg' alt="Awesome list's official logo"/>
+    <p><a href='https://github.com/DivitMittal/'>@DivitMittal</a>'s FLOSS (Free/Libre open-source software) awesome list.</p>
+    <p>GitHub &amp; Codeberg sections are auto-generated twice weekly by <a href='./scripts/update_stars.py'><code>nix run .#update-stars</code></a>. sourcehut content is sourced from <a href='./srht.md'><code>srht.md</code></a>.</p>
     <div align='center'>
         <a href='https://github.com/DivitMittal/awesome'>
             <img src='https://img.shields.io/github/repo-size/DivitMittal/awesome?style=for-the-badge&logo=github' alt='repo-size'/>
@@ -9,11 +11,10 @@
             <img src='https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logo=unlicense' alt='license'/>
         </a>
     </div>
+    <br>
 </div>
 
-[@DivitMittal](https://github.com/DivitMittal/)'s FLOSS(Free/Libre open-source software) awesome list.
-
-GitHub & Codeberg sections are auto-generated twice weekly by [`nix run .#update-stars`](./scripts/update_stars.py). sourcehut content is sourced from [`srht.md`](./srht.md).
+---
 
 <div align='center'>
     <a href='https://github.com/DivitMittal/awesome/actions/workflows/flake-check.yml'>
