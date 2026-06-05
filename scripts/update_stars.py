@@ -1,9 +1,9 @@
-"""Splice srht, GitHub, and Codeberg stars into README marker blocks.
+"""Splice srht, GitHub, Codeberg, and GitLab stars into README marker blocks.
 
 GitHub stars are grouped by star list (via GraphQL `viewer.lists`). Repos
 starred but not in any list land in an "Uncategorized" section. Codeberg
-has no list concept, so its section is flat-alphabetized. sourcehut
-content is read verbatim from `srht.md` (hand-curated).
+and GitLab have no list concept, so their sections are flat-alphabetized.
+sourcehut content is read verbatim from `srht.md` (hand-curated).
 
 `GITHUB_TOKEN` must be a PAT belonging to the user whose stars are being
 listed — `viewer.*` resolves to the token owner. The default
@@ -14,6 +14,9 @@ secret (e.g. `STARS_GH_TOKEN`).
 `CODEBERG_TOKEN` (optional) authenticates against the Forgejo REST API.
 The `/users/{u}/starred` endpoint requires authentication even for public
 stars. If unset, the Codeberg section is rendered with a notice.
+
+`GITLAB_TOKEN` (optional) authenticates against the GitLab REST API.
+If unset, the GitLab section is rendered with a notice.
 
 Output is editorconfig-compliant: UTF-8, LF endings, no trailing
 whitespace, no final newline.
@@ -27,8 +30,10 @@ import urllib.request
 from typing import Any
 
 CODEBERG_USER = os.environ.get("CODEBERG_USER", "DivitMittal")
+GITLAB_USER = os.environ.get("GITLAB_USER", "DivitMittal")
 GITHUB_GRAPHQL = "https://api.github.com/graphql"
 CODEBERG_API = "https://codeberg.org/api/v1"
+GITLAB_API = "https://gitlab.com/api/v4"
 README_PATH = os.environ.get("README_PATH", "README.md")
 SRHT_SOURCE = os.environ.get("SRHT_SOURCE", "srht.md")
 UA = "awesome-stars-generator"
@@ -208,6 +213,42 @@ def fetch_codeberg_starred(token: str | None) -> list[dict[str, Any]]:
     return out
 
 
+def fetch_gitlab_starred(token: str | None) -> list[dict[str, Any]]:
+    if not token:
+        log("  GITLAB_TOKEN unset — skipping GitLab fetch")
+        return []
+    out: list[dict[str, Any]] = []
+    page = 1
+    headers = {
+        "User-Agent": UA,
+        "Accept": "application/json",
+        "Authorization": f"Bearer {token}",
+    }
+    while True:
+        url = f"{GITLAB_API}/users/{GITLAB_USER}/starred_projects?per_page=100&page={page}"
+        req = urllib.request.Request(url, headers=headers)
+        try:
+            with urllib.request.urlopen(req) as resp:
+                batch = json.loads(resp.read())
+        except urllib.error.HTTPError as e:
+            log(f"  gitlab API error on page {page}: {e!r}")
+            break
+        if not batch:
+            break
+        for r in batch:
+            out.append(
+                {
+                    "nameWithOwner": r["path_with_namespace"],
+                    "url": r["web_url"],
+                    "description": r.get("description") or "",
+                }
+            )
+        if len(batch) < 100:
+            break
+        page += 1
+    return out
+
+
 def render_entry(repo: dict[str, Any]) -> str:
     name = repo["nameWithOwner"]
     url = repo["url"]
@@ -266,6 +307,16 @@ def build_codeberg_block(codeberg: list[dict[str, Any]]) -> str:
     return "\n".join(ln.rstrip() for ln in lines).rstrip()
 
 
+def build_gitlab_block(gitlab: list[dict[str, Any]]) -> str:
+    lines: list[str] = ["# [GitLab](https://gitlab.com/)", ""]
+    if gitlab:
+        for r in sorted(gitlab, key=lambda x: x["nameWithOwner"].lower()):
+            lines.append(render_entry(r))
+    else:
+        lines.append("_No starred repos (or `GITLAB_TOKEN` not configured)._")
+    return "\n".join(ln.rstrip() for ln in lines).rstrip()
+
+
 def splice_marker(readme: str, name: str, content: str) -> str:
     pattern = re.compile(
         rf"(<!--\s*{name}:START\s*-->)(.*?)(<!--\s*{name}:END\s*-->)",
@@ -300,14 +351,20 @@ def main() -> int:
     codeberg = fetch_codeberg_starred(os.environ.get("CODEBERG_TOKEN"))
     log(f"codeberg: {len(codeberg)} starred")
 
+    log("fetching gitlab starred repos...")
+    gitlab = fetch_gitlab_starred(os.environ.get("GITLAB_TOKEN"))
+    log(f"gitlab: {len(gitlab)} starred")
+
     github_block = build_github_block(github_lists, github_all)
     codeberg_block = build_codeberg_block(codeberg)
+    gitlab_block = build_gitlab_block(gitlab)
 
     with open(README_PATH, encoding="utf-8") as f:
         readme = f.read()
     readme = splice_marker(readme, "SRHT", srht)
     readme = splice_marker(readme, "GITHUB", github_block)
     readme = splice_marker(readme, "CODEBERG", codeberg_block)
+    readme = splice_marker(readme, "GITLAB", gitlab_block)
     # Trim trailing whitespace per line and drop any final newline.
     readme = "\n".join(ln.rstrip() for ln in readme.split("\n")).rstrip("\n")
     with open(README_PATH, "w", encoding="utf-8", newline="\n") as f:

@@ -45,13 +45,16 @@ in {
             ## Codeberg API token (any scope) — `/users/{u}/starred` requires auth.
             ## Optional: if unset, the Codeberg section is skipped with a notice.
             CODEBERG_TOKEN = "\${{ secrets.CODEBERG_TOKEN }}";
+            ## GitLab personal access token (read_api scope).
+            ## Optional: if unset, the GitLab section is skipped with a notice.
+            GITLAB_TOKEN = "\${{ secrets.GITLAB_TOKEN }}";
           };
         }
         {
           name = "Commit refreshed README.md";
           uses = "stefanzweifel/git-auto-commit-action@v5";
           "with" = {
-            commit_message = "docs(stars): refresh GitHub & Codeberg stars in README";
+            commit_message = "docs(stars): refresh GitHub, Codeberg & GitLab stars in README";
             file_pattern = "README.md";
           };
         }

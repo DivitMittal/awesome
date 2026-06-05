@@ -22,12 +22,13 @@ jobs:
     - env:
         CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.STARS_GH_TOKEN }}
+        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
       name: Generate stars.md
       run: nix run .#update-stars
     - name: Commit refreshed README.md
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: 'docs(stars): refresh GitHub & Codeberg stars in README'
+        commit_message: 'docs(stars): refresh GitHub, Codeberg & GitLab stars in README'
         file_pattern: README.md
     timeout-minutes: 30
 'on':

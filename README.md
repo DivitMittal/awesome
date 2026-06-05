@@ -2,7 +2,7 @@
 <div align='center'>
     <img width=250 height=250 title='Awesome Logo' src='https://raw.githubusercontent.com/sindresorhus/awesome/refs/heads/main/media/logo.svg' alt="Awesome list's official logo"/>
     <p><a href='https://github.com/DivitMittal/'>@DivitMittal</a>'s FLOSS (Free/Libre open-source software) awesome list.</p>
-    <p>GitHub &amp; Codeberg sections are auto-generated twice weekly by <a href='./scripts/update_stars.py'><code>nix run .#update-stars</code></a>. sourcehut content is sourced from <a href='./srht.md'><code>srht.md</code></a>.</p>
+    <p>GitHub, Codeberg &amp; GitLab sections are auto-generated twice weekly by <a href='./scripts/update_stars.py'><code>nix run .#update-stars</code></a>. sourcehut content is sourced from <a href='./srht.md'><code>srht.md</code></a>.</p>
     <div align='center'>
         <a href='https://github.com/DivitMittal/awesome'>
             <img src='https://img.shields.io/github/repo-size/DivitMittal/awesome?style=for-the-badge&logo=github' alt='repo-size'/>
@@ -33,6 +33,7 @@
 ## Contents
 
 - [sourcehut](#sourcehut)
+- [GitLab](#gitlab)
 - [Codeberg](#codeberg)
 - [GitHub](#github)
   - [Quant](#quant)
@@ -74,6 +75,12 @@
 - [goguma](https://sr.ht/~emersion/goguma/): a flutter IRC client
 - [aerc](https://sr.ht/~rjarry/aerc/): a TUI email client
 <!-- SRHT:END -->
+
+<!-- GITLAB:START -->
+# [GitLab](https://gitlab.com/)
+
+_No starred repos (or `GITLAB_TOKEN` not configured)._
+<!-- GITLAB:END -->
 
 <!-- CODEBERG:START -->
 # [Codeberg](https://codeberg.org/)
