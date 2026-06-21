@@ -1,0 +1,10 @@
+name: awesome
+version: 1.0.0
+description: Personal curated awesome list of FLOSS projects organized by hosting platform
+author: DivitMittal
+license: MIT
+target:
+  - claude
+  - codex
+  - opencode
+type: instructions
