@@ -2,7 +2,7 @@ name: awesome
 version: 1.0.0
 description: Personal curated awesome list of FLOSS projects organized by hosting platform
 author: DivitMittal
-license: MIT
+license: LicenseRef-HONCL-1.0
 target:
   - claude
   - codex

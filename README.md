@@ -8,7 +8,7 @@
             <img src='https://img.shields.io/github/repo-size/DivitMittal/awesome?style=for-the-badge&logo=github' alt='repo-size'/>
         </a>
         <a href='https://github.com/DivitMittal/awesome/blob/master/LICENSE'>
-            <img src='https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logo=unlicense' alt='license'/>
+            <img src='https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=HONCL--1.0&logo=unlicense' alt='license'/>
         </a>
     </div>
     <br>
