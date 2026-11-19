@@ -1,7 +1,4 @@
-{
-  common-permissions,
-  ...
-}: let
+{common-permissions, ...}: let
   checkout-cred = {
     name = "Checkout repo";
     uses = "actions/checkout@main";
@@ -29,6 +26,7 @@ in {
       ];
     };
     jobs.refresh-stars = {
+      environment.name = "awesome-list";
       permissions = common-permissions;
       steps = [
         checkout-cred
@@ -38,23 +36,24 @@ in {
           name = "Generate stars.md";
           run = "nix run .#update-stars";
           env = {
-            ## PAT with `read:user` scope for the account that owns the stars.
-            ## The default secrets.GITHUB_TOKEN authenticates as github-actions[bot]
-            ## and cannot see personal star lists via viewer.*
-            GITHUB_TOKEN = "\${{ secrets.STARS_GH_TOKEN }}";
+            ## Token for the account that owns the stars. The default
+            ## secrets.GITHUB_TOKEN authenticates as github-actions[bot] and
+            ## cannot see personal star lists via viewer.*
+            GITHUB_TOKEN = "\${{ secrets.AWESOME_GITHUB_TOKEN }}";
             ## Codeberg API token (any scope) — `/users/{u}/starred` requires auth.
-            ## Optional: if unset, the Codeberg section is skipped with a notice.
-            CODEBERG_TOKEN = "\${{ secrets.CODEBERG_TOKEN }}";
+            CODEBERG_TOKEN = "\${{ secrets.AWESOME_CODEBERG_TOKEN }}";
+            ## Gitea API token (any scope). Defaults to gitea.com; override
+            ## the instance via GITEA_URL if self-hosting.
+            GITEA_TOKEN = "\${{ secrets.AWESOME_GITEA_TOKEN }}";
             ## GitLab personal access token (read_api scope).
-            ## Optional: if unset, the GitLab section is skipped with a notice.
-            GITLAB_TOKEN = "\${{ secrets.GITLAB_TOKEN }}";
+            GITLAB_TOKEN = "\${{ secrets.AWESOME_GITLAB_TOKEN }}";
           };
         }
         {
           name = "Commit refreshed README.md";
           uses = "stefanzweifel/git-auto-commit-action@v5";
           "with" = {
-            commit_message = "docs(stars): refresh GitHub, Codeberg & GitLab stars in README";
+            commit_message = "docs(stars): refresh GitHub, Codeberg, Gitea & GitLab stars in README";
             file_pattern = "README.md";
           };
         }
