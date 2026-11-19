@@ -5,6 +5,8 @@
 # Or commit to trigger the pre-commit hook if enabled.
 jobs:
   refresh-stars:
+    environment:
+      name: awesome-list
     permissions:
       contents: write
       id-token: write
@@ -20,15 +22,17 @@ jobs:
     - name: Magic Nix Cache(Use GitHub Actions Cache)
       uses: DeterminateSystems/magic-nix-cache-action@main
     - env:
-        CODEBERG_TOKEN: ${{ secrets.CODEBERG_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.STARS_GH_TOKEN }}
-        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        CODEBERG_TOKEN: ${{ secrets.AWESOME_CODEBERG_TOKEN }}
+        GITEA_TOKEN: ${{ secrets.AWESOME_GITEA_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.AWESOME_GITHUB_TOKEN }}
+        GITLAB_TOKEN: ${{ secrets.AWESOME_GITLAB_TOKEN }}
       name: Generate stars.md
       run: nix run .#update-stars
     - name: Commit refreshed README.md
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
-        commit_message: 'docs(stars): refresh GitHub, Codeberg & GitLab stars in README'
+        commit_message: 'docs(stars): refresh GitHub, Codeberg, Gitea & GitLab stars
+          in README'
         file_pattern: README.md
     timeout-minutes: 30
 'on':
